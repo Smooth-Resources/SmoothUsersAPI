@@ -92,7 +92,7 @@ public interface UserService {
      * @param uuid
      * @return true if the user was found and the time to live was removed, false if the user was not found.
      */
-    boolean removeTTTLFromCacheByUUID(UUID uuid);
+    boolean removeTTLFromCacheByUUID(UUID uuid);
 
     /**
      * Remove the time to live from a user in the cache by their username.
