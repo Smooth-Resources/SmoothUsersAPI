@@ -14,6 +14,7 @@ public class User {
     public User(UUID uuid, String username) {
         this.uuid = uuid;
         this.username = username;
+        this.lowerCaseUsername = username.toLowerCase();
     }
 
     public void updateUsername(String username) {
