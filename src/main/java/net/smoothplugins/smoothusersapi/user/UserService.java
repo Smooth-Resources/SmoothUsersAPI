@@ -102,4 +102,20 @@ public interface UserService {
      */
     boolean removeTTLFromCacheByUsername(String username);
 
+    /**
+     * Set the time to live of a user in the cache by their UUID.
+     * @param uuid
+     * @param seconds
+     * @return true if the user was found and the time to live was set, false if the user was not found.
+     */
+    boolean setTTLOfCacheByUUID(UUID uuid, int seconds);
+
+    /**
+     * Set the time to live of a user in the cache by their username.
+     * The username is case-insensitive.
+     * @param username
+     * @param seconds
+     * @return true if the user was found and the time to live was set, false if the user was not found.
+     */
+    boolean setTTLOfCacheByUsername(String username, int seconds);
 }
