@@ -24,7 +24,7 @@ public interface UserService {
     /**
      * Checks if a user exists by their UUID.
      * @param uuid
-     * @return
+     * @return true if the user exists, false if not.
      */
     boolean containsByUUID(UUID uuid);
 
@@ -32,14 +32,14 @@ public interface UserService {
      * Checks if a user exists by their username.
      * The username is case-insensitive.
      * @param username
-     * @return
+     * @return true if the user exists, false if not.
      */
     boolean containsByUsername(String username);
 
     /**
      * Gets a (optional) user by their UUID.
      * @param uuid
-     * @return
+     * @return the user if found, empty if not.
      */
     Optional<User> getUserByUUID(UUID uuid);
 
@@ -47,7 +47,7 @@ public interface UserService {
      * Gets a (optional) user by their username.
      * The username is case-insensitive.
      * @param username
-     * @return
+     * @return the user if found, empty if not.
      */
     Optional<User> getUserByUsername(String username);
 
@@ -65,4 +65,41 @@ public interface UserService {
      * @param destinations
      */
     void deleteByUsername(String username, Destination... destinations);
+
+    /**
+     * Checks if a user exists in the cache by their UUID.
+     * @param uuid
+     * @return true if the user exists in the cache, false if not.
+     */
+    boolean cacheContainsByUUID(UUID uuid);
+
+    /**
+     * Checks if a user exists in the cache by their username.
+     * The username is case-insensitive.
+     * @param username
+     * @return true if the user exists in the cache, false if not.
+     */
+    boolean cacheContainsByUsername(String username);
+
+    /**
+     * Load a user to the cache.
+     * @param user
+     */
+    void loadToCache(User user);
+
+    /**
+     * Remove the time to live from a user in the cache by their UUID.
+     * @param uuid
+     * @return true if the user was found and the time to live was removed, false if the user was not found.
+     */
+    boolean removeTTTLFromCacheByUUID(UUID uuid);
+
+    /**
+     * Remove the time to live from a user in the cache by their username.
+     * The username is case-insensitive.
+     * @param username
+     * @return true if the user was found and the time to live was removed, false if the user was not found.
+     */
+    boolean removeTTLFromCacheByUsername(String username);
+
 }
