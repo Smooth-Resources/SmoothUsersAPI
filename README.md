@@ -16,7 +16,7 @@ API of [SmoothUsers](https://github.com/Smooth-Plugins/SmoothUsers)
     <dependency>
         <groupId>com.github.Smooth-Plugins</groupId>
         <artifactId>SmoothUsersAPI</artifactId>
-        <version>v1.0.0</version>
+        <version>v1.0.1</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
