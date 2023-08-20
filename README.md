@@ -3,36 +3,31 @@
 API of [SmoothUsers](https://github.com/Smooth-Plugins/SmoothUsers)
 
 ## 💻 Implementation with Maven or Gradle
-- Maven:
-```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
 
+- Clone the repository with `git clone https://github.com/Smooth-Plugins/SmoothUsersAPI.git`
+- Compile it with Maven using `mvn clean install`
+
+- Maven
+```xml
 <dependencies>
     <dependency>
-        <groupId>com.github.Smooth-Plugins</groupId>
+        <groupId>net.smoothplugins</groupId>
         <artifactId>SmoothUsersAPI</artifactId>
-        <version>v1.0.1</version>
+        <version>%POM-VERSION%</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
 ```
 - Gradle:
 ```groovy
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-
 dependencies {
-    compileOnly "com.github.Smooth-Plugins:SmoothUsersAPI:v1.0.0"
+    compileOnly 'net.smoothplugins:SmoothUsersAPI:%POM-VERSION%'
 }
 ```
 
-## 🧾 Obtener acceso a la API
+## 🧾 Get the API
+
+Add `SmoothUsers` as a depend or softdepend in your plugin.yml
 ```java
 @Override
 public void onEnable() {
