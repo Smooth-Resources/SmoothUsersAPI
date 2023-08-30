@@ -6,7 +6,7 @@ Follow [this guide](https://users.smoothplugins.net/documentation/api) to utiliz
 ## 📋 Links
 - [Discord](https://discord.gg/mNH33gF4Kw)
 - [Wiki](https://users.smoothplugins.net/)
-- [API](https://github.com/Smooth-Plugins/SmoothUsersAPI)
+- [Source code](https://github.com/Smooth-Plugins/SmoothUsers)
 
 ## 👪 Authors
 [Alex](https://github.com/alexcastro1919)
