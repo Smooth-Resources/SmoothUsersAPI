@@ -2,6 +2,7 @@ package net.smoothplugins.smoothusersapi.user;
 
 import net.smoothplugins.smoothusersapi.service.Destination;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -118,4 +119,12 @@ public interface UserService {
      * @return true if the user was found and the time to live was set, false if the user was not found.
      */
     boolean setTTLOfCacheByUsername(String username, int seconds);
+
+    /**
+     * Get all users from the cache.
+     * The users may be outdated from a seconds ago.
+     * @param forceUpdate if true, the users will be updated before getting them.
+     * @return a list of users.
+     */
+    List<User> getAllFromCache(boolean forceUpdate);
 }
