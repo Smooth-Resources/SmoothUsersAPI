@@ -122,7 +122,7 @@ public interface UserService {
 
     /**
      * Get all users from the cache.
-     * The users may be outdated from a seconds ago.
+     * The users may be outdated from a seconds ago (this is useful for example to tab completion).
      * @param forceUpdate if true, the users will be updated before getting them.
      * @return a list of users.
      */
