@@ -1,4 +1,4 @@
-package net.smoothplugins.smoothusersapi.user;
+package com.smoothresources.smoothusersapi.user;
 
 import com.google.gson.annotations.SerializedName;
 

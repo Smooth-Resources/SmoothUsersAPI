@@ -1,4 +1,4 @@
-package net.smoothplugins.smoothusersapi.service;
+package com.smoothresources.smoothusersapi.service;
 
 public enum Destination {
     STORAGE,

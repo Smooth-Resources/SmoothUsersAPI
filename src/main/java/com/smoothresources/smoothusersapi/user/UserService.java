@@ -1,6 +1,6 @@
-package net.smoothplugins.smoothusersapi.user;
+package com.smoothresources.smoothusersapi.user;
 
-import net.smoothplugins.smoothusersapi.service.Destination;
+import com.smoothresources.smoothusersapi.service.Destination;
 
 import java.util.List;
 import java.util.Optional;
